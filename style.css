@@ -1,0 +1,16 @@
+#conatiner {
+    width:50vw;
+    height:10vh;
+}
+
+#image {
+    height:100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#roll {
+    margin-top:5%;
+}

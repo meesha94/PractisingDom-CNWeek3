@@ -10,12 +10,26 @@ const snare = document.getElementById("snare");
 const smalltom = document.getElementById("smalltom");
 const mediumtom = document.getElementById("mediumtom");
 
+
+document.addEventListener("keyup", () => {
+	clap.style.backgroundColor = "#363B5E";
+	hihat.style.backgroundColor = "#363B5E";
+	bass.style.backgroundColor = "#363B5E";
+	kick.style.backgroundColor = "#363B5E";
+	crashcymbal.style.backgroundColor = "#363B5E";
+	ridecymbal.style.backgroundColor = "#363B5E";
+	snare.style.backgroundColor = "#363B5E";
+	smalltom.style.backgroundColor = "#363B5E";
+	mediumtom.style.backgroundColor = "#363B5E";
+})
+
 clap.addEventListener("click", () => {
 	audio.src = "audio/clap.wav";
 });
 document.addEventListener("keypress", (e) => {
     if (e.key == "a") {
         audio.src = "audio/clap.wav";
+        clap.style.backgroundColor = "#4C569F";
     };    
 });
 
@@ -26,6 +40,7 @@ hihat.addEventListener("click", () => {
 document.addEventListener("keypress", (e) => {
     if (e.key == "s") {
         audio.src = "audio/hihat.wav";
+        hihat.style.backgroundColor = "#4C569F";
     };    
 });
 
@@ -35,6 +50,7 @@ bass.addEventListener("click", () => {
 document.addEventListener("keypress", (e) => {
     if (e.key == "l") {
         audio.src = "audio/bass.wav";
+        bass.style.backgroundColor = "#4C569F";
     };    
 });
 
@@ -44,6 +60,7 @@ kick.addEventListener("click", () => {
 document.addEventListener("keypress", (e) => {
     if (e.key == "d") {
         audio.src = "audio/kick.wav";
+        kick.style.backgroundColor = "#4C569F";
     };    
 });
 
@@ -53,6 +70,7 @@ crashcymbal.addEventListener("click", () => {
 document.addEventListener("keypress", (e) => {
     if (e.key == "f") {
         audio.src = "audio/crashcymbal.wav";
+        crashcymbal.style.backgroundColor = "#4C569F";
     };    
 });
 
@@ -62,6 +80,7 @@ ridecymbal.addEventListener("click", () => {
 document.addEventListener("keypress", (e) => {
     if (e.key == "h") {
         audio.src = "audio/ridecymbal.wav";
+        ridecymbal.style.backgroundColor = "#4C569F";
     };    
 });
 
@@ -71,6 +90,7 @@ snare.addEventListener("click", () => {
 document.addEventListener("keypress", (e) => {
     if (e.key == "j") {
         audio.src = "audio/snare.wav";
+        snare.style.backgroundColor = "#4C569F";
     };    
 });
 
@@ -80,6 +100,7 @@ smalltom.addEventListener("click", () => {
 document.addEventListener("keypress", (e) => {
     if (e.key == "k") {
         audio.src = "audio/smalltom.wav";
+        smalltom.style.backgroundColor = "#4C569F";
     };    
 });
 
@@ -89,5 +110,6 @@ mediumtom.addEventListener("click", () => {
 document.addEventListener("keypress", (e) => {
     if (e.key == "g") {
         audio.src = "audio/mediumtom.wav";
+        mediumtom.style.backgroundColor = "#4C569F";
     };    
 });
